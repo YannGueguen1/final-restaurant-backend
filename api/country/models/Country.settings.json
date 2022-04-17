@@ -19,7 +19,7 @@
     },
     "restaurants": {
       "collection": "restaurant",
-      "via": "restaurant"
+      "via": "country"
     }
   }
 }
