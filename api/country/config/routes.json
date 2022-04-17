@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/restaurants",
-      "handler": "Restaurant.find",
+      "path": "/countries",
+      "handler": "Country.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/restaurants/count",
-      "handler": "Restaurant.count",
+      "path": "/countries/count",
+      "handler": "Country.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/restaurants/:id",
-      "handler": "Restaurant.findOne",
+      "path": "/countries/:id",
+      "handler": "Country.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/restaurants",
-      "handler": "Restaurant.create",
+      "path": "/countries",
+      "handler": "Country.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/restaurants/:id",
-      "handler": "Restaurant.update",
+      "path": "/countries/:id",
+      "handler": "Country.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/restaurants/:id",
-      "handler": "Restaurant.delete",
+      "path": "/countries/:id",
+      "handler": "Country.delete",
       "config": {
         "policies": []
       }

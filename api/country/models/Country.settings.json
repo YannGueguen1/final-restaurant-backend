@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "restaurants",
+  "collectionName": "countries",
   "info": {
-    "name": "restaurant",
+    "name": "country",
     "description": ""
   },
   "options": {
@@ -17,16 +17,8 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "dishes": {
-      "collection": "dish",
+    "restaurants": {
+      "collection": "restaurant",
       "via": "restaurant"
     }
   }
