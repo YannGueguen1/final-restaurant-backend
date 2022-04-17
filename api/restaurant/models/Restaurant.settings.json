@@ -28,6 +28,10 @@
     "dishes": {
       "collection": "dish",
       "via": "restaurant"
+    },
+    "country": {
+      "model": "country",
+      "via": "restaurant"
     }
   }
 }
