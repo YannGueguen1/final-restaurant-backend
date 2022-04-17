@@ -29,7 +29,7 @@
       "collection": "dish",
       "via": "restaurant"
     },
-    "country": {
+    "foodType": {
       "type": "string"
     }
   }
