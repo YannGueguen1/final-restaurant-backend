@@ -21,13 +21,13 @@ module.exports = {
     );
     const stripeAmount = Math.floor(amount * 100);
     // charge on stripe
-    // const charge = await stripe.charges.create({
-    //   // Transform cents to dollars.
-    //   amount: stripeAmount,
-    //   currency: "usd",
-    //   description: `Order ${new Date()} by ${ctx.state.user._id}`,
-    //   source: token,
-    // });
+    const charge = await stripe.charges.create({
+      // Transform cents to dollars.
+      amount: stripeAmount,
+      currency: "usd",
+      description: `Order ${new Date()} by ${ctx.state.user._id}`,
+      source: token,
+    });
 
     // Register the order in the database
     const order = await strapi.services.order.create({
